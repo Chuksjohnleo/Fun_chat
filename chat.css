@@ -1,0 +1,107 @@
+body{
+    color: white;
+    font-weight: 900;
+    background-color: rgb(219, 230, 226);
+    font-size: 0.7rem;
+}
+textarea{
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+    text-align: center;
+}
+#textarea1,#textarea2{
+    position: fixed;
+    bottom: 60px;
+    color: black;
+    border-radius: 20px;
+}
+#textarea1{
+    left: 0px;
+}
+
+#textarea2{
+    right: 0px;
+}
+#send2{
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+}
+#send1{
+    position: fixed;
+    left: 20px;
+    bottom: 30px;
+}
+.sent,.received{
+    display: block;
+
+}
+#section1{
+    background-color: lightblue;
+}
+#section2{
+    background-color: rgb(124, 124, 236);
+}
+
+.sent{
+    background-color: blue;
+    text-align: right;
+    padding-right: 10px;
+    margin-left: 10%;
+}
+.date{
+    border-radius: 20px 20px 0px 0px;
+}
+.message{
+    border-radius: 0px 0px 20px 20px;
+}
+.received{
+    background-color: green;
+    text-align: left;
+    padding-left: 10px;
+    margin-right: 10%;
+}
+
+
+.textarea::placeholder{
+    color: rgb(50, 65, 60);
+    opacity: 0.1;
+    font-weight: 800;
+    text-align: center;
+}
+#section_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 60px;
+}
+@media screen and (min-width:500){
+    body{
+        font-size: 1rem;
+    }
+    .sent{
+     margin-left: 30%;
+    }
+    .received{
+        margin-right: 30%;
+    }
+    section{
+        padding: 10px;
+    }
+    button,#textarea1,#textarea2{
+        position: fixed;
+        bottom: 10px;
+        color: black;
+        border-radius: 20px;
+    }
+    #textarea1{
+        left: 70px;
+    }
+    
+    #textarea2{
+        right: 75px;
+    }
+    #send2{
+        right: 20px;
+    }
+}
